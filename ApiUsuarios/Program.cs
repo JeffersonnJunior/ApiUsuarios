@@ -1,5 +1,6 @@
 using ApiUsuarios.Data;
 using ApiUsuarios.Models;
+using ApiUsuarios.Service;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,12 +15,18 @@ builder.Services.AddDbContext<UsuarioDbContext>
     {
         opts.UseMySql(connString, ServerVersion.AutoDetect(connString));
     });
+
 builder.Services
     .AddIdentity<Usuario, IdentityRole>()
     .AddEntityFrameworkStores<UsuarioDbContext>()
     .AddDefaultTokenProviders();
 
+
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+builder.Services.AddScoped<UsuarioService> ();
+
+builder.Services.AddScoped<TokenService> ();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
