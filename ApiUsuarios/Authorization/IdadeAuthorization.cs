@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿//teste
+using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 
 namespace ApiUsuarios.Authorization
