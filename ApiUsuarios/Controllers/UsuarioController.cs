@@ -4,7 +4,7 @@ using ApiUsuarios.Service;
 using AutoMapper;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-//teste
+
 namespace ApiUsuarios.Controllers
 {
     [ApiController]

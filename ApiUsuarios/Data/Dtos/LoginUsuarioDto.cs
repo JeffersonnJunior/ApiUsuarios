@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-//teste
+
 namespace ApiUsuarios.Data.Dtos
 {
     public class LoginUsuarioDto

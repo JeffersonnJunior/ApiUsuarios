@@ -2,7 +2,7 @@
 using ApiUsuarios.Models;
 using AutoMapper;
 using Microsoft.AspNetCore.Identity;
-//teste
+
 namespace ApiUsuarios.Service
 {
     public class UsuarioService
